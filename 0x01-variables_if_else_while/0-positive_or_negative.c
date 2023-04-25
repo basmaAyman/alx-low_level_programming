@@ -5,7 +5,7 @@
  * main - print if positive or negative
  * Description: 'Is number positive or negative?'
  *
- * @n:number
+ * @n: parameter is a number
  * Return: Always 0 (Success)
  */
 /* more headers goes there */
