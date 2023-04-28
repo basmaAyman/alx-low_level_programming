@@ -8,49 +8,27 @@
  *
  * @n: parameter is a number
  */
-/*void print_diagonal(int n)
+void print_diagonal(int n)
 {
         if (n <= 0)
                 _putchar('\n');
         else if (n > 0)
         {
-                int ct1, ct2;
-                for(ct1 = 0; ct1 <= n; ct1++)
+                int ct1_, ct2_;
+                for(ct1_ = 0; ct1_ < n; ct1_++)
                 {
-			for (ct2 = 0; ct2 < n; ct2++)
+			for (ct2_ = 0; ct2_ < n; ct2_++)
 			{
-				if (ct2 == ct1)
+				if (ct2_ == ct1_)
 				{
 					_putchar('\\');
 				}
-				else if (ct2 < ct1)
+				else if (ct2_ < ct1_)
 				{
 					_putchar(' ');
 				}
 			}
-			_putchar('\n');
+			_putchar('\n');		
                 }
         }
-} */
-void print_diagonal(int n)
-{
-	if (n <= 0)
-	{
-		_putchar('\n');
-	} else
-	{
-		int i, j;
-
-		for (i = 0; i < n; i++)
-		{
-			for (j = 0; j < n; j++)
-			{
-				if (j == i)
-					_putchar('\\');
-				else if (j < i)
-					_putchar(' ');
-			}
-			_putchar('\n');
-		}
-	}
 }
