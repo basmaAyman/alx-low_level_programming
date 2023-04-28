@@ -3,7 +3,11 @@
 
 /**
  * main - checks for uppercase character.
+ * 
  * Description: 'Returns 1 if c is uppercase , Returns 0 otherwise'
+ * 
+ * @c: parameter is a character
+ *
  * Return: Always 0 or 1
  */
 
@@ -22,4 +26,3 @@ int _isupper(int c)
 		return (0);
 	}
 }
-

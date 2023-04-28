@@ -3,7 +3,11 @@
 
 /**
  * main -checks for a digit (0 through 9).
- * Description: 'Returns 1 if c is a digit , Returns 0 otherwise'
+ * 
+ * Description: 'Returns 1 if c is a digit , Returns 0 otherwise
+ *
+ * @c: parameter is a character
+ *
  * Return: Always 0 or 1
  */
 int _isdigit(int c)
