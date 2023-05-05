@@ -3,7 +3,7 @@
  * _strcmp - compare string values
  * @s1: parameter is input
  * @s2: parameter is input
- * 
+ *
  * Return: Always void
  */
 int _strcmp(char *s1, char *s2)
