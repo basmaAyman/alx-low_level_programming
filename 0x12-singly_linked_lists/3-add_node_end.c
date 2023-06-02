@@ -3,38 +3,41 @@
 #include "lists.h"
 
 /**
- * add_node_end - adds a new node
+ * add_node_end - Fn adds a new node.
  * @head: double pointer
  * @str: string
  * Return: address or NULL
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new;
-	list_t *temp = *head;
+	list_t *newn;
+	list_t *templ = *head;
 	unsigned int len = 0;
 
 	while (str[len])
+	{
 		len++;
-
-	new = malloc(sizeof(list_t));
-	if (!new)
+	}
+	newn = malloc(sizeof(list_t));
+	if (!newn)
+	{
 		return (NULL);
-
-	new->str = strdup(str);
-	new->len = len;
-	new->next = NULL;
+	}
+	newn->str = strdup(str);
+	newn->len = len;
+	newn->next = NULL;
 
 	if (*head == NULL)
 	{
-		*head = new;
-		return (new);
+		*head = newn;
+		return (newn);
 	}
 
-	while (temp->next)
-		temp = temp->next;
+	while (templ->next)
+	{
+		templ = templ->next;
+	}
+	templ->next = newn;
 
-	temp->next = new;
-
-	return (new);
+	return (newn);
 }
